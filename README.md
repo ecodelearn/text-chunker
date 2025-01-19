@@ -1,4 +1,4 @@
-# Text Chunker
+# Text Chunker (English)
 
 This Python script processes large text files by dividing their content into smaller chunks of a specified size (default: 4000 words). Each chunk is labeled with headers and footers for better identification, and the processed text is saved to an output file. This is particularly useful when dealing with large documents that need to be analyzed or processed in smaller parts.
 
@@ -76,4 +76,80 @@ The script will generate a new file named `<original_file_name>_chunks.txt` in t
 This project is licensed under the MIT License.
 
 ---
-Feel free to contribute or raise issues in the repository!
+
+# Divisor de Texto (Português-BR)
+
+Este script Python processa arquivos de texto grandes, dividindo seu conteúdo em partes menores de um tamanho especificado (padrão: 4000 palavras). Cada parte é rotulada com cabeçalhos e rodapés para melhor identificação, e o texto processado é salvo em um arquivo de saída. Isso é úteis quando se trabalha com documentos extensos que precisam ser analisados ou processados em partes menores.
+
+## Funcionalidades
+
+1. **Divisão de Texto**: Divide o texto de entrada em partes menores com base em um limite especificado de palavras.
+2. **Rotulagem de Partes**: Adiciona cabeçalhos e rodapés a cada parte para identificação clara.
+3. **Entrada e Saída de Arquivos**: Lê o texto de um arquivo e escreve as partes processadas em um novo arquivo.
+
+## Uso
+
+### Requisitos
+- Python 3.x
+
+### Instalação
+Clone o repositório ou baixe o arquivo do script.
+```bash
+git clone <repository_url>
+cd <repository_directory>
+```
+
+### Executando o Script
+Use o seguinte comando:
+```bash
+python script.py <caminho_do_arquivo_de_texto>
+```
+- `<caminho_do_arquivo_de_texto>`: Caminho para o arquivo de texto que você deseja processar.
+
+Exemplo:
+```bash
+python script.py exemplo.txt
+```
+
+### Saída
+O script gerará um novo arquivo chamado `<nome_do_arquivo_original>_chunks.txt` no mesmo diretório do arquivo de entrada. Este arquivo conterá as partes processadas com cabeçalhos e rodapés.
+
+### Formato de Saída Exemplo
+```
+### Início da Parte 1 ###
+<conteúdo da parte>
+### Fim da Parte 1 ###
+==================================================
+### Início da Parte 2 ###
+<conteúdo da parte>
+### Fim da Parte 2 ###
+==================================================
+...
+```
+
+## Visão Geral das Funções
+
+1. `split_text_into_chunks(text, chunk_size=4000)`:
+   - Divide o texto de entrada em partes do tamanho especificado (padrão: 4000 palavras).
+
+2. `add_embeddings_to_chunks(chunks)`:
+   - Adiciona cabeçalhos e rodapés a cada parte para melhor legibilidade.
+
+3. `read_text_file(file_path)`:
+   - Lê e retorna o conteúdo do arquivo de texto especificado.
+
+4. `write_chunks_to_file(chunks, output_file_path)`:
+   - Escreve as partes processadas no arquivo de saída com separadores.
+
+5. `process_text(text)`:
+   - Combina as funções de divisão e de adicição de cabeçalhos para o processamento completo do texto.
+
+6. `main()`:
+   - Ponto de entrada do script. Gerencia a entrada e saída de arquivos e chama as funções de processamento.
+
+## Tratamento de Erros
+- Se o script for executado sem especificar um arquivo, ele exibirá as instruções de uso e será encerrado.
+- Certifique-se de que o arquivo de entrada existe e é legível.
+
+## Licença
+Este projeto está licenciado sob a Licença MIT.
