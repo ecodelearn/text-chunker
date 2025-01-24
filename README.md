@@ -1,4 +1,4 @@
-# Text Chunker
+# Text Chunker / Divisor de Texto
 
 ## Language Selector
 - [English](#text-chunker)
