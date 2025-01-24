@@ -1,4 +1,12 @@
-# Text Chunker (English)
+# Text Chunker
+
+## Language Selector
+- [English](#text-chunker)
+- [Portugues](#divisor-de-texto)
+
+---
+
+# Text Chunker {#text-chunker}
 
 This Python script processes large text files by dividing their content into smaller chunks of a specified size (default: 4000 words). Each chunk is labeled with headers and footers for better identification, and the processed text is saved to an output file. This is particularly useful when dealing with large documents that need to be analyzed or processed in smaller parts.
 
@@ -77,7 +85,7 @@ This project is licensed under the MIT License.
 
 ---
 
-# Divisor de Texto (Português-BR)
+# Divisor de Texto {#divisor-de-texto}
 
 Este script Python processa arquivos de texto grandes, dividindo seu conteúdo em partes menores de um tamanho especificado (padrão: 4000 palavras). Cada parte é rotulada com cabeçalhos e rodapés para melhor identificação, e o texto processado é salvo em um arquivo de saída. Isso é úteis quando se trabalha com documentos extensos que precisam ser analisados ou processados em partes menores.
 
