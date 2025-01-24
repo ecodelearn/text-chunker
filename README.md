@@ -1,8 +1,8 @@
 # Text Chunker / Divisor de Texto
 
-## Language Selector
+## Language Selector / Selecione o Idioma
 - [English](#text-chunker)
-- [Portugues](#Divisor-de-Texto)
+- [Português](#Divisor-de-Texto)
 
 ---
 
